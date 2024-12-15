@@ -33,7 +33,7 @@ function Support() {
         className="min-w-full h-[0.4px] bg-[#1f1f1f]"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       ></motion.div>
 
@@ -41,7 +41,7 @@ function Support() {
         className="text-[2.2rem] leading-[2rem] md:leading-[2.6rem] md:text-[3rem] my-[1rem] font-bold uppercase"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       >
         Ai qullab-quvvatlash
@@ -51,7 +51,7 @@ function Support() {
         className="flex gap-[1rem] mb-[2rem] flex-col text-[1rem] md:text-[1.5rem] max-w-[60rem] font-[400] text-[#1f1f1f] leading-[1.3] uppercase"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       >
         <span>
@@ -112,7 +112,7 @@ function Support() {
         className="min-w-full my-[2rem] md:my-[5rem] h-[0.4px] bg-[#1f1f1f]"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       ></motion.div>
 
@@ -120,13 +120,13 @@ function Support() {
         className="text-[#1f1f1f] font-bold mb-[5rem] md:mb-[5rem] text-[4rem] md:text-[9.5vw] max-w-[90%]   leading-[4rem]  md:leading-[9rem] uppercase relative"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       >
         AI <br /> Data <br /> science analystic
       </motion.div>
 
-      <div className="flex flex-col md:flex-row gap-[2rem] md:gap-[5rem] mb-[5rem] justify-end">
+      <div className="flex flex-col md:flex-row gap-[2rem] md:gap-[10rem] mb-[5rem] justify-end">
         {[14, 7, 1].map((mt, i) => (
           <motion.div
             key={i}
@@ -135,7 +135,7 @@ function Support() {
             } items-center w-[360px]  h-[360px] rounded-[999px] text-[#f9f4e8] bg-[#1f1f1f]`}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             whileHover={ballHover.hover}
             variants={containerVariants}
           >
@@ -152,18 +152,18 @@ function Support() {
         className="text-[#1f1f1f]  font-bold mb-[20rem] text-[4rem] md:text-[9vw] text-end max-w-[100%] leading-[4rem] md:leading-[8rem] uppercase relative"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       >
         ApexBart <br /> Recrute <br /> science analystic <br /> Talanted detials
       </motion.div>
 
       <motion.div
-        onClick={() => setOpen(true)}
+        onClick={() => setOpen(false)}
         className=" hidden md:flex max-w-[70%] cursor-pointer justify-center mx-auto flex-wrap items-center gap-4"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       >
         {["l", "e", "t", "'", "s", "t", "a", "l", "k"].map((e, i) => (

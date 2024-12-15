@@ -43,7 +43,7 @@ const Loading = () => {
       }
     );
 
-    const balls = Array.from({ length: 13 }).map((_, i) =>
+    const balls = Array.from({ length: 16 }).map((_, i) =>
       Bodies.circle(
         Math.random() * windowSize.width,
         (Math.random() * windowSize.height) / 4 - 200 - i * 100,
@@ -69,15 +69,15 @@ const Loading = () => {
 
     const leftWall = Bodies.rectangle(
       0,
-      windowSize.height / 2,
-      10,
+      windowSize.height / 1,
+      1,
       windowSize.height,
       { isStatic: true }
     );
     const rightWall = Bodies.rectangle(
       windowSize.width,
-      windowSize.height / 2,
-      10,
+      windowSize.height / 1,
+      1,
       windowSize.height,
       { isStatic: true }
     );

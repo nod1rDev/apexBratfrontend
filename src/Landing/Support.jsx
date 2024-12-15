@@ -73,27 +73,21 @@ function Support() {
         </span>
       </motion.div>
 
-      <motion.div
-        className="flex flex-col md:flex-row w-full gap-4 justify-between items-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={containerVariants}
-      >
+      <motion.div className="flex flex-col md:flex-row w-full gap-4 justify-between items-center">
         {[...Array(2)].map((_, i) => (
           <motion.div
             key={i}
             className="w-[100%] md:w-[50%] rounded-2xl bg-[#1f1f1f] text-[#f9f4e8] p-10 flex flex-col"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             variants={scrollVariants}
           >
-            <div className="w-[112px] h-[112px] text-[1.5rem] flex justify-center items-center rounded-[999px] bg-[#f9f4e8] text-[#1f1f1f] mb-4 font-bold">
+            <div className="w-[90px] h-[90px] md:w-[112px] md:h-[112px] md:text-[1.5rem] flex justify-center items-center rounded-[999px] bg-[#f9f4e8] text-[#1f1f1f] mb-4 font-bold">
               Ai
             </div>
 
-            <h2 className="text-[3rem] font-[600] leading-1 uppercase mb-4">
+            <h2 className="text-[2rem] md:text-[3rem] font-[600] leading-1 uppercase mb-4">
               Use Case : Upciti
             </h2>
 

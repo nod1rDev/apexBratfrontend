@@ -39,7 +39,7 @@ function Footer() {
           className="mt-6 w-full "
           variants={containerVariants}
         >
-          <motion.div className="text-start md:text-center flex md:justify-between flex-col md:flex-row text-sm leading-[1.5] mb-6 space-y-2">
+          <motion.div className="text-start text-center md:text-start  flex md:justify-between flex-col md:flex-row text-sm leading-[1.5] mb-6 space-y-2">
             <p>Born in <br /> <strong>Uzbekiston</strong></p>
             <p>Hunting in <br /> <strong>Asia & Europe</strong></p>
             <p>Actions <br /> <strong>Time for the planet</strong></p>
@@ -52,7 +52,7 @@ function Footer() {
           >
             Let's Talk
             <motion.div
-              className="ml-4 w-16 h-16 md:w-[108px] md:h-[108px] flex justify-center items-center rounded-full bg-[#f9f4e8] text-[#1f1f1f]"
+              className="ml-4 w-[46px] h-[46px] md:w-[108px] md:h-[108px] font-bold flex justify-center items-center rounded-full bg-[#f9f4e8] text-[#1f1f1f]"
               variants={containerVariants}
             >
               {">"}
@@ -65,7 +65,6 @@ function Footer() {
           >
             <span>©2024</span>
             <span>LinkedIn</span>
-            <span>{"   "}</span>
             <span>apexbart@ai.com</span>
             <span>+998 95 801 40 84</span>
           </motion.div>

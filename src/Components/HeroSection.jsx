@@ -77,7 +77,7 @@ const HeroSection = () => {
 
         <motion.div className="flex flex-col gap-[1.5rem]">
           <motion.h1
-            className="text-[2.6rem] sm:text-4xl font-[600] uppercase leading-[2.6rem] sm:leading-[3.6rem]"
+            className="text-[2.1rem] sm:text-4xl font-[600] uppercase leading-[2.6rem] sm:leading-[3.6rem]"
             variants={fadeIn}
           >
             FLAIRE : ENG YAXSHILARNI YOLLAShDA SIZNING ITTIFOQDOSHINgiz
@@ -120,7 +120,7 @@ const HeroSection = () => {
             variants={fadeIn}
           >
             <motion.h1
-              className="text-[3rem] md:text-[8rem] font-[600] leading-[3rem] sm:leading-[8rem] uppercase"
+              className="text-[2.5rem] md:text-[7rem] font-[600] leading-[3rem] sm:leading-[8rem] uppercase"
             >
               {work.title}
             </motion.h1>

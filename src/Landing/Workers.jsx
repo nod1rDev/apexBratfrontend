@@ -21,7 +21,7 @@ function Workers() {
           {workers.map((e, i) => (
             <motion.div
               key={i}
-              className="relative w-[32%] min-h-[540px] rounded-[10px]"
+              className="relative w-[415px] md:w-[32%] min-h-[540px] rounded-[10px]"
               onHoverStart={() => setHoveredIndex(i)}
               onHoverEnd={() => setHoveredIndex(null)}
               onClick={() =>
@@ -124,7 +124,7 @@ function Workers() {
               />
             </motion.div>
           ))}
-          <div className="w-[32%] min-h-[540px] p-[1.7rem] bg-[#f9f4e8] flex flex-col gap-10 rounded-[10px] text-[#1f1f1f]">
+          <div className="w-[415px] md:w-[32%] min-h-[540px] p-[1.7rem] bg-[#f9f4e8] flex flex-col gap-10 rounded-[10px] text-[#1f1f1f]">
             <h2 className=" text-center  uppercase font-bold my-[3rem] text-[2.2vw] leading-[0.8] ">
               Texnik yollash bo'yicha mutaxassis Flairega qo'shiling.
             </h2>

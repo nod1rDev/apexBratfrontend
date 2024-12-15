@@ -158,6 +158,7 @@ function Support() {
         ApexBart <br /> Recrute <br /> science analystic <br /> Talanted detials
       </motion.div>
 
+      {/*Lets talk */}
       <motion.div
         onClick={() => setOpen(false)}
         className=" hidden md:flex max-w-[70%] cursor-pointer justify-center mx-auto flex-wrap items-center gap-4"

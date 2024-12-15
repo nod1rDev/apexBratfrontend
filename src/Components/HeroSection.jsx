@@ -1,36 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { services } from "../utils";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  const works = [
-    {
-      title: "Muvaffaqiyat",
-      p1: `Ehtiyojlaringizga qarab ikkita variant :​ depozit bilan yoki omonatsiz .`,
-      p2: `Ikkala holatda ham, biz ideal iste'dodni topganimizdagina balansni
-        to'laysiz . ​ ​​​​ Oddiy, moslashuvchan va maqsadlaringizga mos
-        keladi .`,
-    },
-    {
-      title: "Pro",
-      p1: `Ish beruvchilarimizga qo'shiling
-        to'g'ridan- to'g'ri sizning
-        tashkilot.`,
-      p2: `Kundalik stavka uchun biz sizning to'liq vaqtli ishga yollashingizga g'amxo'rlik qilamiz ​​​​
-        HR jamoasining tabiiy kengaytmasi sifatida integratsiya .`,
-    },
-    {
-      title: "Ijrochi",
-      p1: `Istagan rahbarlarni toping ​​
-      biznesingizni keyingi bosqichga olib chiqing
-      ustun..`,
-      p2: `Bizning Ijroiya Qidiruvimiz sizning o'sishingizga yordam beradigan etakchilarni maqsad qilib qo'yadi va jalb qiladi
-      eng strategik ehtiyojlaringiz uchun moslashtirilgan yondashuv .`,
-    },
-  ];
-
   const fadeIn = {
     hidden: { opacity: 0, y: 70 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   return (
@@ -108,32 +88,34 @@ const HeroSection = () => {
         </motion.div>
       </motion.div>
 
-      {/* Works Section */}
-      <div className="mt-[220px] sm:mt-[120px] flex flex-col gap-[60px] sm:gap-[80px]">
-        {works.map((work, index) => (
+      <div className="mt-[220px]  flex flex-col gap-[60px] sm:gap-[100px]">
+        {services.map((work, index) => (
           <motion.div
             key={index}
-            className="flex flex-col gap-[0.6rem]"
+            className="relative flex flex-col gap-[0.2rem] cursor-pointer group"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             variants={fadeIn}
+            onClick={() => navigate(`/service/${work.id}`)}
           >
-            <motion.h1
-              className="text-[2.5rem] md:text-[7rem] font-[600] leading-[3rem] sm:leading-[8rem] uppercase"
-            >
-              {work.title}
+            {/* Title */}
+            <motion.h1 className="text-[1.5rem] md:text-[3rem] font-[600] leading-[2rem] sm:leading-[2.6rem] uppercase group-hover:opacity-70 transition-all">
+              <Link to={`/service/${work.id}`}>{work.title}</Link>
             </motion.h1>
-            <motion.p
-              className="text-[1.4rem] leading-[1.5rem] md:text-[3rem] text-[#f9f4e8b3] md:leading-[2.6rem] uppercase max-w-[90%]"
-            >
-              {work.p1}
-            </motion.p>
-            <motion.p
-              className="text-[1.2rem] md:text-[1.45rem] text-[#8a8882] max-w-[80%]"
-            >
-              {work.p2}
-            </motion.p>
+
+            {/* Overview (hoverda kengayadi) */}
+            <motion.div className="relative overflow-hidden transition-all duration-300 ease-in-out h-[0px] group-hover:h-[180px] bg-[#1f1f1f] text-[#f9f4e8] p-4">
+              <motion.p className="text-[1.4rem] md:text-[1.6rem] font-[500] mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {work.overview}
+              </motion.p>
+              <Link
+                to={"services/:" + work.id}
+                className=" text-[1rem]  md:text-[1.2rem] font-[600] uppercase text-[#f9f4e8]  text-opacity-[80%]    underline transition"
+              >
+                More information
+              </Link>
+            </motion.div>
           </motion.div>
         ))}
       </div>

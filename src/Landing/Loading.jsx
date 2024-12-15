@@ -66,17 +66,18 @@ const Loading = () => {
         render: { fillStyle: "#1f1f1f" },
       }
     );
-
     const leftWall = Bodies.rectangle(
-      windowSize.height / 1,
-      1,
+      0, // Chap tomonda joylashgan
+      windowSize.height / 2,
+      10,
       windowSize.height,
       { isStatic: true }
     );
+
     const rightWall = Bodies.rectangle(
-      windowSize.width,
-      windowSize.height / 1,
-      1,
+      windowSize.width, // O‘ng tomonda joylashgan
+      windowSize.height / 2,
+      10,
       windowSize.height,
       { isStatic: true }
     );

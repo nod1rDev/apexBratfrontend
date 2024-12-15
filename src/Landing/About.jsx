@@ -1,16 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { experience, texts } from "../utils";
 
 function About() {
-  const texts = [
-    "Birinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "Ikkinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "Uchinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "To‘rtinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "Beshinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "Oltinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-    "Yettinchi qator matni qator matni qator matni qator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni qator matniqator matniqator matniqator matniqator matniqator matniqator matni ",
-  ];
+
 
   const fadeLeft = {
     hidden: { opacity: 0, x: 100 },
@@ -22,24 +15,7 @@ function About() {
     visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
   };
 
-  const experience = [
-    {
-      title: "Hidlash Usuli",
-      p: `Flaire-da bizning ishga yollash metodologiyamiz yirik texnologiya kompaniyalarining ilg‘or tajribalariga asoslanadi. Ajoyib iste'dodlarni innovatsion kompaniyalar bilan bog'lash uchun ishlab chiqilgan bizning yondashuvimiz sifatli arizalarni, qisqartirilgan muddatlarni va jarayonning har bir bosqichida shaxsiy monitoringni kafolatlaydi.`,
-    },
-    {
-      title: "Hidlash Usuli",
-      p: `Flaire-da bizning ishga yollash metodologiyamiz yirik texnologiya kompaniyalarining ilg‘or tajribalariga asoslanadi. Ajoyib iste'dodlarni innovatsion kompaniyalar bilan bog'lash uchun ishlab chiqilgan bizning yondashuvimiz sifatli arizalarni, qisqartirilgan muddatlarni va jarayonning har bir bosqichida shaxsiy monitoringni kafolatlaydi.`,
-    },
-    {
-      title: "Hidlash Usuli",
-      p: `Flaire-da bizning ishga yollash metodologiyamiz yirik texnologiya kompaniyalarining ilg‘or tajribalariga asoslanadi. Ajoyib iste'dodlarni innovatsion kompaniyalar bilan bog'lash uchun ishlab chiqilgan bizning yondashuvimiz sifatli arizalarni, qisqartirilgan muddatlarni va jarayonning har bir bosqichida shaxsiy monitoringni kafolatlaydi.`,
-    },
-    {
-      title: "Hidlash Usuli",
-      p: `Flaire-da bizning ishga yollash metodologiyamiz yirik texnologiya kompaniyalarining ilg‘or tajribalariga asoslanadi. Ajoyib iste'dodlarni innovatsion kompaniyalar bilan bog'lash uchun ishlab chiqilgan bizning yondashuvimiz sifatli arizalarni, qisqartirilgan muddatlarni va jarayonning har bir bosqichida shaxsiy monitoringni kafolatlaydi.`,
-    },
-  ];
+ 
 
   const fadeIn = {
     hidden: { opacity: 0, y: 50 },

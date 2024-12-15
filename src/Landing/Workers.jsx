@@ -21,7 +21,7 @@ function Workers() {
           {workers.map((e, i) => (
             <motion.div
               key={i}
-              className="relative w-[415px] md:w-[32%] min-h-[540px] rounded-[10px]"
+              className="relative w-[415px] md:w-[32.5%] min-h-[540px] rounded-[10px]"
               onHoverStart={() => setHoveredIndex(i)}
               onHoverEnd={() => setHoveredIndex(null)}
               onClick={() =>

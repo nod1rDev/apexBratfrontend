@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Engine, Render, World, Bodies, Runner, Events } from "matter-js";
 
 const Loading = () => {
@@ -68,7 +68,6 @@ const Loading = () => {
     );
 
     const leftWall = Bodies.rectangle(
-      0,
       windowSize.height / 1,
       1,
       windowSize.height,

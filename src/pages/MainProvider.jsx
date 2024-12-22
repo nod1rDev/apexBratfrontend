@@ -17,7 +17,7 @@ function MainPage() {
       
         <div>
           <div id="half1" className="bg-[#1f1f1f] text-[#f9f4e8] flex flex-col">
-            <div className="mx-auto max-w-[90%]">
+            <div className="mx-auto max-w-[98%]">
               <div className="w-[180px] mx-auto">
                 <Header />
               </div>

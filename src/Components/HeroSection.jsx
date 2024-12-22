@@ -23,7 +23,7 @@ const HeroSection = () => {
       viewport={{ once: false, amount: 0.2 }}
     >
       {/* Hero Text */}
-      <div className="flex justify-between ">
+      <div className="flex  ">
         <motion.div
           className="w-full max-w-[50rem] text-left flex flex-col gap-[2rem]"
           initial="hidden"
@@ -47,14 +47,14 @@ const HeroSection = () => {
           </motion.p>
         </motion.div>
 
-        <div className="hidden md:block w-[1100px] h-[1000px]">
+        <div className="hidden md:block w-[1200px] right-0 h-[660px] absolute">
           <Spline scene="https://prod.spline.design/61ZyXgOjROP5RshQ/scene.splinecode" />
         </div>
       </div>
 
       {/* Section Text */}
       <motion.div
-        className="mt-[120px] sm:mt-[20px]"
+        className="mt-[120px] sm:mt-[400px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}

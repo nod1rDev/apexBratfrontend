@@ -1,11 +1,12 @@
 import React from "react";
+import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion";
 import { services } from "../utils";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const fadeIn = {
-    hidden: { opacity: 0, y: 70 },
+    hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
       y: 0,
@@ -16,38 +17,44 @@ const HeroSection = () => {
   return (
     <motion.section
       id="hero"
-      className="flex flex-col mt-[100px] px-4 sm:px-8 lg:px-[5rem]"
+      className="flex flex-col mt-[100px]   lg:px-[5rem]"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }}
     >
       {/* Hero Text */}
-      <motion.div
-        className="w-full max-w-[55rem] text-left flex flex-col gap-[2rem]"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeIn}
-      >
-        <motion.span
-          className="text-[#8a8882] font-[600] uppercase text-sm sm:text-base"
+      <div className="flex justify-between ">
+        <motion.div
+          className="w-full max-w-[50rem] text-left flex flex-col gap-[2rem]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
           variants={fadeIn}
         >
-          Texnik, AI, ma'lumotlar va mahsulotlarni yollash bo'yicha
-          mutaxassislar
-        </motion.span>
+          <motion.span
+            className="text-[#8a8882] font-[600] uppercase text-sm sm:text-base"
+            variants={fadeIn}
+          >
+            Texnik, AI, ma'lumotlar va mahsulotlarni yollash bo'yicha
+            mutaxassislar
+          </motion.span>
 
-        <motion.p
-          className="text-[#f9f4e8]  uppercase text-3xl sm:text-[4rem] md:leading-[3.7rem]  font-[600]"
-          variants={fadeIn}
-        >
-          eng yaxshi texnologiya va raqamli iste'dodlarni topadigan firma
-        </motion.p>
-      </motion.div>
+          <motion.p
+            className="text-[#f9f4e8]  uppercase text-3xl sm:text-[3.8rem] md:leading-[3.5rem]  font-[600]"
+            variants={fadeIn}
+          >
+            eng yaxshi texnologiya va raqamli iste'dodlarni topadigan firma
+          </motion.p>
+        </motion.div>
+
+        <div className="w-[1100px] h-[1000px]">
+          <Spline scene="https://prod.spline.design/61ZyXgOjROP5RshQ/scene.splinecode" />
+        </div>
+      </div>
 
       {/* Section Text */}
       <motion.div
-        className="mt-[320px] sm:mt-[400px]"
+        className="mt-[120px] sm:mt-[20px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
@@ -88,7 +95,7 @@ const HeroSection = () => {
         </motion.div>
       </motion.div>
 
-      <div className="mt-[220px]  flex flex-col gap-[60px] sm:gap-[100px]">
+      <div className="mt-[220px] md:mt-[600px]  flex flex-col gap-[60px] sm:gap-[100px]">
         {services.map((work, index) => (
           <motion.div
             key={index}

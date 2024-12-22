@@ -47,7 +47,7 @@ const HeroSection = () => {
           </motion.p>
         </motion.div>
 
-        <div className="w-[1100px] h-[1000px]">
+        <div className="hidden md:block w-[1100px] h-[1000px]">
           <Spline scene="https://prod.spline.design/61ZyXgOjROP5RshQ/scene.splinecode" />
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { img } from "framer-motion/client";
+
 export const hamkorlarRoyhati = [
   {
     title: "Voodo",
@@ -109,6 +111,7 @@ export const services = [
   {
     id: 1,
     title: "Freelancer Services",
+    img: "/freelancer.jpg",
     overview:
       "At ApexBart Solutions, we harness the power of a global network of experienced freelancers to provide flexible and on-demand support for a wide array of projects and industries. Our freelancer services offer you access to a diverse pool of talent, allowing you to scale your operations efficiently and achieve your goals with ease.",
     Services_Offered: [
@@ -156,6 +159,7 @@ export const services = [
   {
     id: 2,
     title: "Professional Voice-Over Services",
+    img: "/voiceover.jpg",
     overview:
       "At ApexBart Solutions, we offer professional voice-over services that are designed to captivate and engage your audience, regardless of the platform or project. Whether you're creating content for YouTube, producing professional media projects, or need voice-overs for other applications, our global team of native-speaking voice talent ensures that your content resonates with authenticity and professionalism.",
     Services_Offered: [
@@ -203,6 +207,7 @@ export const services = [
   {
     id: 3,
     title: "Transcription and Translation Services",
+    img: "/transcription.jpg",
     overview:
       "At ApexBart Solutions, we provide precise and culturally sensitive transcription and translation services, enabling your content to reach and resonate with a global audience. Our commitment to accuracy and efficiency ensures that your message is effectively communicated across languages and borders.",
     Services_Offered: [
@@ -250,6 +255,7 @@ export const services = [
   {
     id: 4,
     title: "AI and Automation Solutions",
+    img: "/ai.jpg",
     overview:
       "At ApexBart Solutions, we are committed to empowering businesses with cutting-edge AI tools and automation workflows. Our solutions are designed to enhance efficiency, scalability, and competitiveness, allowing businesses to stay ahead in today's fast-paced digital landscape.",
     Services_Offered: [
@@ -297,6 +303,7 @@ export const services = [
   {
     id: 5,
     title: "Freelancer Services",
+    img: "/freelancer.jpg",
     overview:
       "At ApexBart Solutions, we harness the power of a global network of experienced freelancers to provide flexible and on-demand support for a wide array of projects and industries. Our freelancer services offer you access to a diverse pool of talent, allowing you to scale your operations efficiently and achieve your goals with ease.",
     Services_Offered: [
@@ -344,6 +351,7 @@ export const services = [
   {
     id: 6,
     title: "End-to-End Project Management",
+    img: "/project.jpg",
     overview:
       "At ApexBart Solutions, we offer comprehensive end-to-end project management services to ensure seamless execution from start to finish. By leveraging modern tools and methodologies, we keep your projects on track, delivering outstanding results that exceed your expectations.",
     Services_Offered: [

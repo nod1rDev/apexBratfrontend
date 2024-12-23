@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import  { useState, useEffect } from "react";
+
 import { Link as ScrollLink } from "react-scroll";
-import ContactModal from "./ContactModal";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

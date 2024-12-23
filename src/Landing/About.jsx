@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { experience, texts } from "../utils";
 
@@ -33,7 +33,7 @@ function About() {
         {texts.map((text, index) => (
           <motion.div
             key={index}
-            className={`text-[2rem] sm:text-[3rem] md:text-[3.5rem] font-[500] whitespace-nowrap ${
+            className={`text-[2rem]  md:text-[5rem]  font-[500] whitespace-nowrap ${
               index % 2 === 0 ? "text-[#f9f4e8]" : "styled-text"
             }`}
             initial="hidden"

@@ -1,4 +1,4 @@
-import { img } from "framer-motion/client";
+
 
 export const hamkorlarRoyhati = [
   {
@@ -297,54 +297,6 @@ export const services = [
         title: "Custom AI Tools:",
         description:
           "Our team integrated custom AI tools for marketing and customer support teams, leading to improved response times and enhanced customer satisfaction.",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Freelancer Services",
-    img: "/freelancer.jpg",
-    overview:
-      "At ApexBart Solutions, we harness the power of a global network of experienced freelancers to provide flexible and on-demand support for a wide array of projects and industries. Our freelancer services offer you access to a diverse pool of talent, allowing you to scale your operations efficiently and achieve your goals with ease.",
-    Services_Offered: [
-      {
-        title: "Global Talent Network:",
-        description:
-          "Our extensive network connects you with skilled freelancers specializing in various fields, including voice-over, content creation, graphic design, and more. With talent from around the world, we ensure that you have access to the right expertise for your project.",
-      },
-      {
-        title: "Custom Project Support:",
-        description:
-          "We understand that each project is unique, which is why we offer tailored solutions designed to meet your specific needs and goals. Whether you require short-term assistance or ongoing support, our freelancer services are flexible and adaptable to your requirements.",
-      },
-    ],
-    Benefits: [
-      {
-        title: "Diverse Workforce:",
-        description:
-          "Tap into a global talent pool without the commitment of hiring full-time employees. Our freelancers bring a wealth of experience and diverse skill sets to the table.",
-      },
-      {
-        title: "Scalability:",
-        description:
-          "Easily scale your projects up or down based on demand, without the constraints of traditional employment models. Our on-demand freelancer network ensures that you have the resources you need, when you need them.",
-      },
-      {
-        title: "Flexible Pricing and Timelines:",
-        description:
-          " Our freelancer services offer flexible pricing options and timelines, allowing you to manage your budget and deadlines effectively. You have the freedom to choose the level of support that best suits your project's requirements.",
-      },
-    ],
-    Examples: [
-      {
-        title: "Multilingual Voice-Over Projects:",
-        description:
-          "We successfully delivered multilingual voice-over projects using freelancers from three different continents, ensuring linguistic accuracy and cultural authenticity.",
-      },
-      {
-        title: "Social Media Content Creation:",
-        description:
-          "Our freelancer network supported content creation for social media campaigns, providing rapid turnaround times and high-quality outputs that helped our clients engage their audiences effectively.",
       },
     ],
   },

@@ -58,3 +58,24 @@ body {
   inset: 0%;
   transform: scale(1.01);
 }
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8a8882; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1f1f1f; /* Padding around thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8a8882 #1f1f1f;
+}

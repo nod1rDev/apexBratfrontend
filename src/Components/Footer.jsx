@@ -35,14 +35,17 @@ function Footer() {
           dagi mutaxassislar ishga qabul qilish texnologiya
         </motion.h1>
 
-        <motion.div
-          className="mt-6 w-full "
-          variants={containerVariants}
-        >
+        <motion.div className="mt-6 w-full " variants={containerVariants}>
           <motion.div className="text-start text-center md:text-start  flex md:justify-between flex-col md:flex-row text-sm leading-[1.5] mb-6 space-y-2">
-            <p>Born in <br /> <strong>Uzbekiston</strong></p>
-            <p>Hunting in <br /> <strong>Asia & Europe</strong></p>
-            <p>Actions <br /> <strong>Time for the planet</strong></p>
+            <p>
+              Born in <br /> <strong>Uzbekiston</strong>
+            </p>
+            <p>
+              Hunting in <br /> <strong>Asia & Europe</strong>
+            </p>
+            <p>
+              Actions <br /> <strong>Time for the planet</strong>
+            </p>
           </motion.div>
 
           <motion.div
@@ -55,7 +58,15 @@ function Footer() {
               className="ml-4 w-[46px] h-[46px] md:w-[108px] md:h-[108px] font-bold flex justify-center items-center rounded-full bg-[#f9f4e8] text-[#1f1f1f]"
               variants={containerVariants}
             >
-              {">"}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="70"
+                height="70"
+                fill="#1f1f1f"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
             </motion.div>
           </motion.div>
 

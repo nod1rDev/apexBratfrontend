@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ContactModal from "../Components/ContactModal";
+import Spline from "@splinetool/react-spline";
 
 function Support() {
   const [open, setOpen] = useState(false);
 
   const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
@@ -28,7 +29,10 @@ function Support() {
   };
 
   return (
-    <section id="support" className="mt-[200px] pb-[10rem] w-[90%] mx-auto">
+    <section
+      id="support"
+      className="relative mt-[200px] pb-[10rem] w-[90%] mx-auto"
+    >
       <motion.div
         className="min-w-full h-[0.4px] bg-[#1f1f1f]"
         initial="hidden"
@@ -115,16 +119,20 @@ function Support() {
         viewport={{ once: false, amount: 0.5 }}
         variants={containerVariants}
       ></motion.div>
-
-      <motion.div
-        className="text-[#1f1f1f] font-bold mb-[5rem] md:mb-[5rem] text-[4rem] md:text-[9.5vw] max-w-[90%]   leading-[4rem]  md:leading-[9rem] uppercase relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={containerVariants}
-      >
-        AI <br /> Data <br /> science analystic
-      </motion.div>
+      <div className="flex justify-between relative w-full">
+        <motion.div
+          className="text-[#1f1f1f] font-bold mb-[5rem] md:mb-[5rem] text-[4rem] md:text-[9.5vw] max-w-[90%]   leading-[4rem]  md:leading-[9rem] uppercase relative"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          variants={containerVariants}
+        >
+          AI <br /> Data <br /> science analystic
+        </motion.div>
+        <div className=" absolute -top-[20%] z-10 w-[50%] right-0 h-[1000px]">
+        <Spline scene="https://prod.spline.design/tgMcFTnH9Gg2BrfP/scene.splinecode" />
+      </div>
+      </div>
 
       <div className="flex flex-col md:flex-row gap-[2rem] md:gap-[10rem] mb-[5rem] justify-end">
         {[14, 7, 1].map((mt, i) => (
@@ -148,37 +156,7 @@ function Support() {
         ))}
       </div>
 
-      <motion.div
-        className="text-[#1f1f1f]  font-bold mb-[20rem] text-[4rem] md:text-[9vw] text-end max-w-[100%] leading-[4rem] md:leading-[8rem] uppercase relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={containerVariants}
-      >
-        ApexBart <br /> Recrute <br /> science analystic <br /> Talanted detials
-      </motion.div>
-
-      {/*Lets talk */}
-      <motion.div
-        onClick={() => setOpen(false)}
-        className=" hidden md:flex max-w-[70%] cursor-pointer justify-center mx-auto flex-wrap items-center gap-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={containerVariants}
-      >
-        {["l", "e", "t", "'", "s", "t", "a", "l", "k"].map((e, i) => (
-          <motion.div
-            id="keywordBall"
-            key={i}
-            className="flex justify-center items-center uppercase text-[#f9f4e8] bg-[#1f1f1f] rounded-[999px] w-[160px] h-[160px] text-[7rem]"
-            whileHover={ballHover.hover}
-          >
-            {e}
-          </motion.div>
-        ))}
-      </motion.div>
-
+      
       <ContactModal isOpen={open} setIsOpen={setOpen} />
     </section>
   );

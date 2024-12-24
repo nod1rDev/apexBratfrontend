@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { hamkorlarRoyhati } from "../utils";
+
 
 function Hamkorlar() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -15,7 +16,10 @@ function Hamkorlar() {
   };
 
   return (
-    <section id="hamkor" className="mt-[100px] md:mt-[300px] w-[90%] mx-auto">
+    <section
+      id="hamkor"
+      className=" relative mt-[100px] md:mt-[300px] w-[90%] mx-auto"
+    >
       <div className="my-[3rem] min-w-full h-[0.4px] bg-[#f9f4e8]"></div>
 
       <div className="flex flex-col">
@@ -60,6 +64,7 @@ function Hamkorlar() {
           ))}
         </div>
       </div>
+     
     </section>
   );
 }

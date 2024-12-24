@@ -13,7 +13,7 @@ function About() {
   };
 
   const fadeIn = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
@@ -44,7 +44,7 @@ function About() {
       {/* Section for scrollable experience */}
       <div
         id="experience"
-        className="w-full mt-[100px] md:mt-[0] flex flex-col gap-8 px-4 sm:px-8 lg:px-[5rem]"
+        className="w-full mt-[100px]  flex flex-col gap-8 px-4 sm:px-8 lg:px-[5rem]"
       >
         <div className="flex flex-col gap-8">
           {experience.map((e, i) => (
